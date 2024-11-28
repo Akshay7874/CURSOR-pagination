@@ -8,7 +8,7 @@ const THROTTLE_WAIT = 300; // milliseconds
 const BATCH_SIZE = 20;
 
 const fetchOrders = async ({ pageParam = 0 }) => {
-    const { data } = await axios.get('http://localhost:3001/orders', {
+    const { data } = await axios.get('https://cursor-pagination.onrender.com/orders', {
         params: {
             skip: pageParam * BATCH_SIZE,
             limit: BATCH_SIZE,
