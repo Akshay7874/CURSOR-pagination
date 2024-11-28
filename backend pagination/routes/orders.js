@@ -37,7 +37,7 @@ router.get('/', async (req, res) => {
     });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: 'Error fetching orders' });
+    res.status(500).json({ message: 'Error fetching order' });
   }
 });
 
